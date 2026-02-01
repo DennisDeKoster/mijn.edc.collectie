@@ -578,6 +578,8 @@
     ]
   },
   
+
+
   {
     "type": "zaklamp",
     "merk": "Olight",
@@ -589,7 +591,7 @@
     "aankoopwaarde": "115,17",
     "aankoopdatum": "06-09-2025",
     "gewicht": 119,
-	"lengte": 120,
+	  "lengte": 120,
     "dikte": 27,
     "maxLumen": 1400,
     "minLumen": 1,
@@ -601,20 +603,20 @@
     "iprating": "IPX7",
     "valbestendigheid": "",
     "materiaal": "OAL™",
-    "diameter": "",
-	"strobe": true,
-	"sos": false,
-	"beacon": false,
+    "strobe": true,
+    "sos": false,
+    "beacon": false,
     "lightingLevels": [
       { "description": "Turbo 1400 lumen"},
       { "description": "High 420 lumen"},
       { "description": "Medium 100 lumen"},
-	  { "description": "Low 15 lumen"},
-	  { "description": "Moonlight 1 lumen"}
+      { "description": "Low 15 lumen"},
+      { "description": "Moonlight 1 lumen"}
     ],
-	"specials": [
-	  { "description": "UV-licht 365nM 900mW"},
-      { "description": "Laser Class 3R ≤5mW groen" }
+	  "specials": [
+      { "description": "UV-licht 365nM 900mW"},
+      { "description": "Laser Class 3R ≤5mW groen" },
+      { "description": "Magnetische onderkant"}
 	]
   },
 
@@ -629,7 +631,7 @@
     "aankoopwaarde": "23,95",
     "aankoopdatum": "12-08-2025",
     "gewicht": "41,8",
-	"lengte": 89,
+	  "lengte": 89,
     "dikte": 15,
     "maxLumen": 200,
     "minLumen": 1,
@@ -641,13 +643,12 @@
     "iprating": "IPX8",
     "valbestendigheid": "",
     "materiaal": "Aluminium",
-    "diameter": "",
-	"strobe": false,
-	"sos": false,
-	"beacon": false,
+    "strobe": false,
+    "sos": false,
+    "beacon": false,
     "lightingLevels": [
       { "description": "High 200 lumen"},
-	  { "description": "Low 5 lumen"}
+      { "description": "Low 5 lumen"}
     ]
   },
 
@@ -662,28 +663,27 @@
     "aankoopwaarde": "0,00",
     "aankoopdatum": "25-12-2024",
     "gewicht": 30,
-	"lengte": "48,5",
+    "lengte": "48,5",
     "dikte": 23,
     "maxLumen": 300,
     "minLumen": 1,
     "maxBereik": 68,
-    "maxRuntime": "30 uur (1,5 lumen)",
+    "maxRuntime": "30 uur (1 lumen)",
     "batterij": "280mAh Li-ion",
     "oplaadbaar": true,
     "usbType": "USB-C",
     "iprating": "IPX5",
     "valbestendigheid": "",
     "materiaal": "Aluminium",
-    "diameter": "",
-	"strobe": false,
-	"sos": true,
-	"beacon": true,
+    "strobe": false,
+    "sos": true,
+    "beacon": true,
     "lightingLevels": [
       { "description": "High 300 lumen"},
       { "description": "Medium 100 lumen"},
-	  { "description": "Low 10 lumen"},
-	  { "description": "Moonlight 1,5 lumen"},
-	  { "description": "Rood 4 lumen"}
+      { "description": "Low 10 lumen"},
+      { "description": "Moonlight 1,5 lumen"},
+      { "description": "Rood 4 lumen"}
     ]
   },
   
@@ -698,7 +698,7 @@
     "aankoopwaarde": "96,95",
     "aankoopdatum": "20-05-2024",
     "gewicht": 82,
-	"lengte": 140,
+    "lengte": 140,
     "dikte": 27,
     "maxLumen": 3300,
     "minLumen": 1,
@@ -710,19 +710,93 @@
     "iprating": "IP68",
     "valbestendigheid": "",
     "materiaal": "Aluminium",
-    "diameter": "",
-	"strobe": true,
-	"sos": true,
-	"beacon": true,
+    "strobe": true,
+    "sos": true,
+    "beacon": true,
     "lightingLevels": [
       { "description": "Turbo 3300 lumen"},
       { "description": "High 1200 lumen"},
       { "description": "Medium 300 lumen"},
-	  { "description": "Low 50 lumen"},
-	  { "description": "Ultralow 1 lumen"}
+      { "description": "Low 50 lumen"},
+      { "description": "Ultralow 1 lumen"}
     ],
-	"specials": [
-	{ "description": "Nabijheidssensor"}
-	]
+    "specials": [
+      { "description": "Nabijheidssensor"}
+    ]
+  },
+
+  {
+    "type": "zaklamp",
+    "merk": "Nitecore",
+    "naam": "TIKI",
+    "uitvoering": "Transparant",
+    "afbeelding": "img/flashlights/Nitecore_TIKI.webp",
+    "link": "https://flashlight.nitecore.com/product/tiki",
+    "nieuwwaarde": "24,95",
+    "aankoopwaarde": 0,
+    "aankoopdatum": "25-12-2023",
+    "gewicht": 12,
+    "lengte": 55,
+    "dikte": 12,
+    "maxLumen": 300,
+    "minLumen": 1,
+    "maxBereik": 71,
+    "maxRuntime": "40 uur (1 lumen)",
+    "batterij": "130mAh Li-ion",
+    "oplaadbaar": true,
+    "usbType": "USB-micro",
+    "iprating": "IP66",
+    "valbestendigheid": "",
+    "materiaal": "Polycarbonaat",
+    "strobe": false,
+    "sos": false,
+    "beacon": true,
+    "lightingLevels": [
+      { "description": "High 300 lumen"},
+      { "description": "Medium 60 lumen"},
+      { "description": "Low 15 lumen"},
+      { "description": "Ultralow 1 lumen"}
+    ],
+    "specials": [
+      { "description": "UV-licht (zijkant) 500mW"},
+      { "description": "Wit-licht (zijkant) 22 lumen"}
+    ]
+  },
+
+  {
+    "type": "zaklamp",
+    "merk": "Fenix",
+    "naam": "RC09",
+    "uitvoering": "Zwart",
+    "afbeelding": "img/flashlights/Fenix_RC09.webp",
+    "link": "https://www.fenixlighting.com/products/fenix-rc09-rechargeable-flashlight",
+    "nieuwwaarde": "64,95",
+    "aankoopwaarde": "64,95",
+    "aankoopdatum": "27-09-2017",
+    "gewicht": 60,
+    "lengte": 72,
+    "dikte": "21,5",
+    "maxLumen": 550,
+    "minLumen": 5,
+    "maxBereik": 115,
+    "maxRuntime": "56 uur (5 lumen)",
+    "batterij": "950mAh 16340 Li-ion",
+    "oplaadbaar": true,
+    "usbType": "USB magnetisch",
+    "iprating": "IPX8",
+    "valbestendigheid": "",
+    "materiaal": "Aluminium",
+    "strobe": true,
+    "sos": false,
+    "beacon": false,
+    "lightingLevels": [
+      { "description": "Turbo 550 lumen"},
+      { "description": "High 150 lumen"},
+      { "description": "Medium 50 lumen"},
+      { "description": "Low 5 lumen"}
+    ],
+    "specials": [
+      { "description": "Magnetische onderkant"}
+    ]
   }
 ]
