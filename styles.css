@@ -18,6 +18,10 @@ body {
         2px 2px 2px rgba(0, 0, 0, 0.35);
 }
 
+.summary {
+    font-size: 14px;
+}
+
 h2 {
     position: relative;
     transition: transform 0.5s ease, opacity 4.0s ease;
@@ -306,7 +310,11 @@ button:hover {
         flex-direction: column;
         align-items: flex-start;
     }
-
+    .summary {
+        margin-top: 4px;
+        padding: 12px;
+        font-size: 12.5px;
+    }
     .brand-logos{
         padding: 10px 0px 10px 0px;
     }
@@ -324,19 +332,31 @@ button:hover {
     .card-content {
         font-size: 12px;
     }
+    
+    .header1{
+        cursor: pointer;
+        user-select: none;
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        gap: 8px;
+    }
 
     h1 {
-        font-size: 24px;
+        font-size: 28px;
+        letter-spacing: 5px;
     }
 
     h2 {
         font-size: 18px;
     }
 
-    .search-sort-container, .header1 {
-        display: flex;
+    .search-sort-container {
         align-items: stretch;
-        flex-direction: row; 
+        justify-content: center;
         padding: 10px 0px 10px 0px;
     }
 
@@ -352,11 +372,56 @@ button:hover {
     }
 
     .brand-logos{
-        padding: 5px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        border-radius: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 10px;
     }
 
     .logo-wrapper {
-        width: 50px;
+        width: 60px;
+    }
+
+    .summary {
+        display: none;
+        padding: 11px;
+        font-size: 12px;
+        background: linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #eff7ff 100%
+        );
+        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        opacity: 0;
+        transform: translateY(-120px);
+        transition: 
+            opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+            transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+            display 0.2s allow-discrete;
+    }
+
+    .summary.visible {
+        display: grid;
+        opacity: 1;
+        transform: translateY(0);
+        transition: 
+            opacity 0.4s ease-out,
+            transform 0.4s ease-out,
+    }
+
+    @starting-style {
+        .summary.visible {
+            opacity: 0;
+            transform: translateY(-120px);
+        }
+    }
+
+    .summary span {
+        display: inline-block;
+        min-width: 110px;
     }
 
     .search-toggle {
@@ -378,14 +443,6 @@ button:hover {
     .search-bar.active {
         display: flex;
         padding: 0px 0px 0px 0px;
-    }
-
-    .header1, .summary {
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-        align-items: flex-start;
-        font-size: 12px;
     }
 
     .card:hover .link-image,
