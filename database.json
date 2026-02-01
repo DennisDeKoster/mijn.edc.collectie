@@ -667,7 +667,7 @@
     "maxLumen": 300,
     "minLumen": 1,
     "maxBereik": 68,
-    "maxRuntime": "30 uur (1 lumen)",
+    "maxRuntime": "30 uur (1,5 lumen)",
     "batterij": "280mAh Li-ion",
     "oplaadbaar": true,
     "usbType": "USB-C",
