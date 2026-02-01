@@ -37,7 +37,7 @@ This project is strictly for my own personal use and reference — not intended 
 
 ## Last Updated
 
-Last updated: January 31, 2026
+Last updated: February 2, 2026
 
 ---
 
