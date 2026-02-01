@@ -361,15 +361,22 @@
             sortItems();
             updateSummary();
             highlightCardOnScroll();
+            const toggle = document.getElementById('toggle-summary');
+            const summary = document.getElementById('summary-block');
+            if (toggle && summary) {
+                toggle.addEventListener('click', () => {
+                    summary.classList.toggle('visible');
+                });
+            }
         });
 
     </script>
 </head>
 <body>
     <div class="header1">
-        <h1>Mijn EDC collectie</h1>
+        <h1 id="toggle-summary">Mijn EDC collectie</h1>
     </div>
-    <div class="summary">
+    <div class="summary" id="summary-block">
         <span>Aantal zakmessen: <span class="value" id="totalMessen">—</span></span>
         <span>Nieuwwaarde: <span class="value" id="totalValueMessen">€ —</span></span>
         <span>Aankoopwaarde: <span class="value" id="totalPurchaseMessen">€ —</span></span>
@@ -378,7 +385,7 @@
         <span>Nieuwwaarde: <span class="value" id="totalValueZaklampen">€ —</span></span>
         <span>Aankoopwaarde: <span class="value" id="totalPurchaseZaklampen">€ —</span></span>
         <br>
-        <div class="last-update">Laatst bijgewerkt: 31-01-2026</div>
+        <div class="last-update">Laatst bijgewerkt: 01-02-2026</div>
     </div>
     <div class="brand-logos">
         <div class="logo-wrapper brand-filter" data-merk="Benchmade"><img src="img/logos/Benchmade-logo.webp" alt="Benchmade"></div>
