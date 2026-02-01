@@ -42,4 +42,4 @@ Last updated: January 31, 2026
 ---
 
 Inspired by my ever-growing EDC collection ✌️
-[GitHub Pages](https://dennisdekoster.github.io/mijn.zakmes.collectie/)
+[GitHub Pages](https://dennisdekoster.github.io/mijn.edc.collectie/)
