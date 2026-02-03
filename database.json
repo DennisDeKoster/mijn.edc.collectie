@@ -607,11 +607,11 @@
     "sos": true,
     "beacon": true,
     "lightingLevels": [
-	  { "description": "Floodlight / Spotlight"},
-      { "description": "Turbo 530 / 450 lumen"},
-      { "description": "High 300 / 270  lumen"},
-      { "description": "Medium 100 / 90 lumen"},
-      { "description": "Low 10 / 9 lumen"},
+	  { "description": "Floodlight/Spotlight"},
+      { "description": "Turbo 530/450 lumen"},
+      { "description": "High 300/270  lumen"},
+      { "description": "Medium 100/90 lumen"},
+      { "description": "Low 10/9 lumen"},
       { "description": "Moonlight 1 lumen"}
     ],
 	  "specials": [
