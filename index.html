@@ -26,7 +26,7 @@
                     card.innerHTML = `
                         <div class="card-content shine-hover">
                             <div class="specs">
-                                <div class="row" onclick="window.open('${item.link || '#'}', '_blank')">
+                                <div class="row">
                                     <div class="topleft">
                                         <h2>
                                             <span class="merk">${item.merk || ''}</span><br>
@@ -37,7 +37,9 @@
                                         </h2>
                                     </div>
                                     <div class="topright">
-                                        <img src="${item.afbeelding || ''}" alt="${item.naam || 'Zaklamp'}">
+                                        <a href="${item.link || '#'}" class="link-image" target="_blank">
+                                            <img src="${item.afbeelding || ''}" alt="${item.naam || 'Zaklamp'}">
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="row">
