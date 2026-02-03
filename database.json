@@ -577,9 +577,48 @@
       }
     ]
   },
-  
 
 
+
+  {
+    "type": "zaklamp",
+    "merk": "Olight",
+    "naam": "Oclip Ultra",
+    "uitvoering": "Navy Blue",
+    "afbeelding": "img/flashlights/Olight_OclipUltra.webp",
+    "link": "https://www.olight.com/store/oclip-ultra-clip-on-edc-light",
+    "nieuwwaarde": "59,95",
+    "aankoopwaarde": "53,96",
+    "aankoopdatum": "02-02-2026",
+    "gewicht": 55,
+	"lengte": 57,
+    "dikte": "28,3",
+    "maxLumen": 530,
+    "minLumen": 1,
+    "maxBereik": 130,
+    "maxRuntime": "144 uur (1 lumen)",
+    "batterij": "580mAh Li-ion",
+    "oplaadbaar": true,
+    "usbType": "USB-C",
+    "iprating": "IPX6",
+    "valbestendigheid": "",
+    "materiaal": "OAL™",
+    "strobe": true,
+    "sos": true,
+    "beacon": true,
+    "lightingLevels": [
+      { "description": "Turbo flood 530 / spot 450 lumen"},
+      { "description": "High flood 300 / spot 270  lumen"},
+      { "description": "Medium flood 100 / spot 90 lumen"},
+      { "description": "Low flood 10 / spot 9 lumen"},
+      { "description": "Moonlight 1 lumen"}
+    ],
+	  "specials": [
+      { "description": "UV-licht 365nM 800mW"},
+      { "description": "Magnetische achterkant"}
+	]
+  },
+	
   {
     "type": "zaklamp",
     "merk": "Olight",
@@ -684,9 +723,12 @@
       { "description": "Low 10 lumen"},
       { "description": "Moonlight 1,5 lumen"},
       { "description": "Rood 4 lumen"}
-    ]
+    ],
+	"specials": [
+      { "description": "Magnetische achterkant"}
+	]
   },
-  
+
   {
     "type": "zaklamp",
     "merk": "Nitecore",
