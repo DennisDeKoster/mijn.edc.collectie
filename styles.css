@@ -293,7 +293,7 @@ button:hover {
     }
 
     .card:hover .link-image {
-        transform: scale(1.22) translateY(-10%) translateX(-22%);
+        transform: scale(1.22) translateY(-5%) translateX(-22%);
     }
 }
 
@@ -303,7 +303,7 @@ button:hover {
     }
 
     .card:hover .link-image {
-        transform: scale(1.12) translateY(-10%) translateX(-22%);
+        transform: scale(1.12) translateY(-5%) translateX(-22%);
     }
 
     .header1 {
