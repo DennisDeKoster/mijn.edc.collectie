@@ -161,7 +161,14 @@ h2 {
 
 .brand-filter {
     cursor: pointer;
-    transition: transform 0.15s ease, opacity 0.15s ease;
+    border-radius: 15px;
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+.brand-filter.active {
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.18),
+                0 8px 16px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
 }
 
 .logo-wrapper {
@@ -174,8 +181,8 @@ h2 {
 }
 
 .logo-wrapper img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 95%;
+    max-height: 95%;
     mix-blend-mode: multiply;
     transition: transform 0.3s ease;
 }
@@ -382,6 +389,10 @@ button:hover {
 
     .logo-wrapper {
         width: 60px;
+    }
+
+    .logo-wrapper img:hover {
+        transform: scale(1);
     }
 
     .summary {
