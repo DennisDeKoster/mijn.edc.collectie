@@ -183,7 +183,6 @@ h2 {
 .logo-wrapper img {
     max-width: 95%;
     max-height: 95%;
-    mix-blend-mode: multiply;
     transition: transform 0.3s ease;
 }
 
