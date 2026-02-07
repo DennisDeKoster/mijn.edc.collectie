@@ -304,10 +304,10 @@ button:hover {
     cursor: pointer;
     z-index: 900;
     display: flex;
-    transition: transform 0.5s ease, background 0.5s;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    transition: transform 0.2s ease-in-out;
 }
 
 .fab-wishlist:hover {
@@ -333,19 +333,23 @@ button:hover {
 }
 
 .wishlist-modal {
-    display: none;
+    display: flex;
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.2);
-    backdrop-filter: blur(3px);
     z-index: 1000;
     align-items: center;
     justify-content: center;
     padding: 16px;
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: blur(3px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 
 .wishlist-modal.active {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
 }
 
 .modal-content {
