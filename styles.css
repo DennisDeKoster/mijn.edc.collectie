@@ -1,3 +1,7 @@
+html {
+    scrollbar-gutter: stable;
+}
+
 body {
     background-color: #d2e0f0;
     margin: 0;
@@ -292,6 +296,7 @@ button:hover {
 }
 
 .fab-wishlist {
+    position: relative;
     width: 35px;
     height: 35px;
     line-height: 50px;
@@ -315,23 +320,6 @@ button:hover {
     color: white;
 }
 
-.fab-wishlist span {
-    position: absolute;
-    top: -6px;
-    right: -6px;
-    background: rgba(231, 76, 60);
-    color: white;
-    font-size: 10px;
-    min-width: 18px;
-    height: 18px;
-    padding: 0;
-    border-radius: 999px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-}
-
 .wishlist-modal {
     display: flex;
     position: fixed;
@@ -350,6 +338,11 @@ button:hover {
 .wishlist-modal.active {
     opacity: 1;
     visibility: visible;
+}
+
+body:has(.wishlist-modal.active) {
+    overflow: hidden;
+    touch-action: none;
 }
 
 .modal-content {
