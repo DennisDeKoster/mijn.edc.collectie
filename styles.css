@@ -2,6 +2,7 @@ body {
     background-color: #d2e0f0;
     margin: 0;
     padding: 25px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header1 {
@@ -9,17 +10,13 @@ body {
     text-align: center;
     font-size: 18px;
     letter-spacing: 8px;
-    padding: 0px 0px 0px 0px; 
+    padding: 0;
     text-shadow:
         -1px -1px 1px white,
         1px -1px 1px white,
         -1px  1px 1px white,
         1px  1px 1px white,
         2px 2px 2px rgba(0, 0, 0, 0.35);
-}
-
-.summary {
-    font-size: 14px;
 }
 
 h2 {
@@ -70,7 +67,6 @@ h2 {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
 
@@ -80,7 +76,6 @@ h2 {
 
 .card:hover h2{
     transform: scale(1.15) translateY(0%) translateX(5%);
-    opacity: 0.2;
 }
 
 .link-image {
@@ -209,7 +204,16 @@ h2 {
     justify-content: space-between;
     align-items: center;
     font-family: 'Space Grotesk', sans-serif;
-    padding: 0px 0px 0px 0px; 
+    padding: 0;
+}
+
+.summary {
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.last-update {
+    padding-right: 25px;
 }
 
 .search-bar {
@@ -287,6 +291,152 @@ button:hover {
     color: #333;
 }
 
+.fab-wishlist {
+    width: 35px;
+    height: 35px;
+    line-height: 50px;
+    background: rgb(2, 136, 209);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5em;
+    box-shadow: 5px 2px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+    z-index: 900;
+    display: flex;
+    transition: transform 0.5s ease, background 0.5s;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.fab-wishlist:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+.fab-wishlist span {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background: rgba(231, 76, 60);
+    color: white;
+    font-size: 10px;
+    min-width: 18px;
+    height: 18px;
+    padding: 0;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.wishlist-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: blur(3px);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.wishlist-modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 720px;
+    max-height: 88vh;
+    overflow: hidden;
+    box-shadow: 0 8px 8px rgba(0,0,0,0.35);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background: #f9fbfd;
+    border-bottom: 1px solid #e8ecef;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 1.35em;
+    color: #0288d1;
+}
+
+.modal-close {
+    font-size: 1.2em;
+    color: #777;
+    cursor: pointer;
+    line-height: 1;
+    font-weight: 500;
+}
+
+.modal-close:hover {
+    color: #e74c3c;
+}
+
+.wishlist-list {
+    padding: 8px 0;
+    overflow-y: auto;
+    max-height: 65vh;
+    gap: 0;
+}
+
+.wishlist-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 20px;
+    border-bottom: 1px solid #f0f4f8;
+    
+}
+
+.wishlist-item:last-child {
+    border-bottom: none;
+}
+
+.wishlist-item img {
+    width: 140px;
+    height: 140px;
+    object-fit: scale-down;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.wishlist-item-info {
+    flex: 1;
+    font-size: 0.9em;
+}
+
+.wishlist-item-name {
+    margin: 0 0 4px;
+    font-weight: 600;
+    font-size: 1.05em;
+    text-shadow:
+        -1px -1px 1px rgba(255, 255, 255, 0.8),
+        1px -1px 1px rgba(255, 255, 255, 0.8),
+        -1px  1px 1px rgba(255, 255, 255, 0.8),
+        1px  1px 1px rgba(255, 255, 255, 0.8),
+        4px 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.empty-message {
+    text-align: center;
+    padding: 60px 20px;
+    color: #777;
+    font-size: 1.1em;
+}
+
 @media (min-width: 1680px) {
     .container {
         grid-template-columns: repeat(4, 1fr);
@@ -342,17 +492,14 @@ button:hover {
     .header1{
         cursor: pointer;
         user-select: none;
-        padding: 0px 0px 0px 0px;
+        padding: 0;
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 0;
         gap: 8px;
-    }
-
-    h1 {
-        font-size: 28px;
+        font-size: 14px;
         letter-spacing: 5px;
     }
 
@@ -378,8 +525,7 @@ button:hover {
     }
 
     .brand-logos{
-        padding: 0px 0px 0px 0px;
-        border-radius: 0px;
+        padding: 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -460,9 +606,15 @@ button:hover {
         transform: scale(1.125) translateY(-5%) translateX(-22%);
     }
     
-    .card:hover h2,
-    .card.is-active h2 {
+    .card:hover h2, .card.is-active h2 {
         transform: scale(1.1) translateY(0%) translateX(0%);
         opacity: 0.2;
     }
+
+    .fab-wishlist {
+        position: absolute;
+        right: 12px;
+        top: 12px;
+    }
 }
+

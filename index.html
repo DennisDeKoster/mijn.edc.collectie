@@ -353,6 +353,58 @@
             });
         }
 
+        async function loadWishlist() {
+            try {
+                const response = await fetch('wishlist.json');
+                const items = await response.json();
+                const countEl = document.getElementById('wishlist-badge');
+                if (countEl) countEl.textContent = items.length;
+                return items;
+            } catch (err) {
+                document.getElementById('wishlist-badge').textContent = '…';
+                return [];
+            }
+        }
+
+        function renderWishlist(items) {
+            const container = document.getElementById('wishlistList');
+            if (!container) return;
+            if (items.length === 0) {
+                container.innerHTML = '<p class="empty-message">Momenteel geen items op de wishlist</p>';
+                return;
+            }
+            let html = '';
+            items.forEach(item => {
+                const imgHtml = item.afbeelding 
+                    ? `<a href="${item.link}" target="_blank"><img src="${item.afbeelding}" alt="${item.naam || 'item'}">`
+                    : `<div style="width:140px; height:140px; background:#e9ecef; border-radius:10px;"></div>`;
+
+                html += `
+                    <div class="wishlist-item">
+                        ${imgHtml}
+                        <div class="wishlist-item-info">
+                            <p class="wishlist-item-name">${item.naam || 'Onbekend model'}</p></a>
+                            ${item.uitvoering}<br>
+                            ${item.prijs}
+                        </div>
+                    </div>
+                `;
+            });
+            container.innerHTML = html;
+        }
+
+        document.addEventListener('click', e => {
+            if (e.target.closest('.fab-wishlist')) {
+                document.getElementById('wishlistModal').classList.add('active');
+                loadWishlist().then(renderWishlist);
+            }
+
+            if (e.target.closest('.modal-close') || 
+                (e.target.id === 'wishlistModal' && !e.target.closest('.modal-content'))) {
+                document.getElementById('wishlistModal').classList.remove('active');
+            }
+        });
+
         document.addEventListener('DOMContentLoaded', async () => {
             await loadItems();
             updateSortOptions();
@@ -360,6 +412,7 @@
             document.getElementById('sortOrder').value = 'desc';
             sortItems();
             updateSummary();
+            loadWishlist();
             highlightCardOnScroll();
             const toggle = document.getElementById('toggle-summary');
             const summary = document.getElementById('summary-block');
@@ -385,7 +438,10 @@
         <span>Nieuwwaarde: <span class="value" id="totalValueZaklampen">€ —</span></span>
         <span>Aankoopwaarde: <span class="value" id="totalPurchaseZaklampen">€ —</span></span>
         <br>
-        <div class="last-update">Laatst bijgewerkt: 06-02-2026</div>
+        <div class="last-update">Laatst bijgewerkt: 07-02-2026</div>
+        <button class="fab-wishlist" title="Mijn wishlist">
+            ♡<span id="wishlist-badge">…</span>
+        </button>
     </div>
     <div class="brand-logos">
         <div class="logo-wrapper brand-filter" data-merk="Benchmade"><img src="img/logos/Benchmade-logo.webp" alt="Benchmade"></div>
@@ -426,5 +482,14 @@
         </div>
     </div>
     <div class="container" id="itemContainer"></div>
+    <div id="wishlistModal" class="wishlist-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Wishlist - Interessant</h2>
+                <button class="modal-close">✕</button>
+            </div>
+            <div id="wishlistList" class="wishlist-list"></div>
+        </div>
+    </div>
 </body>
 </html>
