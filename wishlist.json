@@ -1,10 +1,10 @@
 [
   {
-    "naam": "Kizer Vanguard Phoca CD",
-    "uitvoering": "Blackwashed 14C28N, Grey Aluminium",
-    "link": "https://www.knivesandtools.nl/nl/pt/-kizer-vanguard-phoca-cd-v3781cda2-blackwashed-14c28n-grey-aluminium-zakmes.htm",
-    "afbeelding": "https://assets.katogroup.eu/i/katogroup/KZV3781CDA2_01_kizer",
-    "prijs": "€ 94,49"
+    "naam": "Remette Steed",
+    "uitvoering": "Pearlescent M390, Titanium Carbon Fiber",
+    "link": "https://www.remetteknife.com/products/remette-rt-steed-innovative-button-frame-lock-m390-blade-titanium-carbon-fiber-handle-folding-pocket-knife-rtws-tb",
+    "afbeelding": "https://www.remetteknife.com/cdn/shop/files/1_6e4a9bc2-e328-4111-beb9-b36cc47d5bf5.jpg",
+    "prijs": "$ 275"
   },
   {
     "naam": "Kunwu Compact Excalibur Vertalock",
@@ -14,18 +14,18 @@
     "prijs": "$ 268"
   },
   {
-    "naam": "Remette Steed",
-    "uitvoering": "Pearlescent M390, Titanium Carbon Fiber",
-    "link": "https://www.remetteknife.com/products/remette-rt-steed-innovative-button-frame-lock-m390-blade-titanium-carbon-fiber-handle-folding-pocket-knife-rtws-tb",
-    "afbeelding": "https://www.remetteknife.com/cdn/shop/files/1_6e4a9bc2-e328-4111-beb9-b36cc47d5bf5.jpg",
-    "prijs": "$ 275"
-  },
-  {
     "naam": "Remette Cool Leopard",
     "uitvoering": "Pearlescent M390, Titanium Handle",
     "link": "https://www.remetteknife.com/products/remette-rt-cool-leopard-knife-innovative-button-frame-lock-m390-blade-titanium-handle-outdoor-camping-knives-rtks-t",
     "afbeelding": "https://www.remetteknife.com/cdn/shop/files/1_fa079ffa-9369-40ee-bf2f-9cd98e720e85.jpg?v=1768964461",
     "prijs": "$ 325"
+  },
+  {
+    "naam": "Kizer Vanguard Phoca CD",
+    "uitvoering": "Blackwashed 14C28N, Grey Aluminium",
+    "link": "https://www.knivesandtools.nl/nl/pt/-kizer-vanguard-phoca-cd-v3781cda2-blackwashed-14c28n-grey-aluminium-zakmes.htm",
+    "afbeelding": "https://assets.katogroup.eu/i/katogroup/KZV3781CDA2_01_kizer",
+    "prijs": "€ 94,49"
   },
   {
     "naam": "Vosteed Raccoon TiSlim",
@@ -55,4 +55,5 @@
     "afbeelding": "https://www.lamnia.com/images/525x525/kunwu-knives-pulsar-diamond-texture-ti-satin-85268-kunx705t-1-01.png",
     "prijs": "€ 250,68"
   }
+
 ]
