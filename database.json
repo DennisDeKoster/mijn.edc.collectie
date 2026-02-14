@@ -311,7 +311,7 @@
     "lemmetVorm": "Reverse tanto",
     "afwerking": "Manual Grind Pearlescent",
     "openmethode": "Duimgat",
-    "vergrendeling": "Button linerlock",
+    "vergrendeling": "Button+Linerlock",
     "gewicht": "136",
     "staalsoort": "Böhler M390",
     "hardheid": "59-61",
@@ -534,7 +534,7 @@
     "lemmetVorm": "Drop Point",
     "afwerking": "Black Stonewash",
     "openmethode": "Duimsteun",
-    "vergrendeling": "Button top linerlock",
+    "vergrendeling": "Button+Top linerlock",
     "gewicht": "109",
     "staalsoort": "154CM",
     "hardheid": "60-62",
@@ -577,7 +577,29 @@
       }
     ]
   },
-
+  {
+    "type": "mes",
+    "merk": "Remette",
+    "naam": "RT-Steed",
+    "model": "RTWS-TB",
+    "uitvoering": "Titanium + Carbon Fiber",
+    "lemmetVorm": "Drop point",
+    "afwerking": "Manual Fine Grinding Pearlescent",
+    "openmethode": "Duimsteun",
+    "vergrendeling": "Button+Frame Lock",
+    "gewicht": "113,5",
+    "staalsoort": "Böhler M390",
+    "hardheid": "60-62",
+    "lengteGesloten": "117",
+    "lengte": "200",
+    "lengteLemmet": "78",
+    "dikteLemmet": "3,3",
+    "nieuwwaarde": "274,78",
+    "aankoopwaarde": "274,78",
+    "aankoopdatum": "13-02-2026",
+    "afbeelding": "img/knives/Remette-RTWS-TB.webp",
+    "link": "https://www.remetteknife.com/products/remette-rt-steed-innovative-button-frame-lock-m390-blade-titanium-carbon-fiber-handle-folding-pocket-knife-rtws-tb"
+  },
 
 
   {
