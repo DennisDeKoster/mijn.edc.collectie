@@ -317,15 +317,23 @@
             e.preventDefault();
             const merk = link.dataset.merk.toLowerCase();
             const searchInput = document.getElementById('search');
+            const allBrands = document.querySelectorAll('.brand-filter');
             if (activeBrand === merk) {
                 activeBrand = null;
                 searchInput.value = '';
-                document.querySelectorAll('.brand-filter').forEach(el => el.classList.remove('active'));
+                allBrands.forEach(el => {
+                    el.classList.remove('active');
+                    el.classList.remove('inactive');
+                });
             } else {
                 activeBrand = merk;
                 searchInput.value = merk;
-                document.querySelectorAll('.brand-filter').forEach(el => el.classList.remove('active'));
+                allBrands.forEach(el => {
+                    el.classList.remove('active');
+                    el.classList.add('inactive');
+                });
                 link.classList.add('active');
+                link.classList.remove('inactive');
             }
             filterItems();
         });
@@ -421,6 +429,7 @@
     </script>
 </head>
 <body>
+    <div class="wallpaper"></div>
     <div class="header1">
         <h1 id="toggle-summary">Mijn EDC collectie</h1>
     </div>
@@ -433,7 +442,7 @@
         <span>Nieuwwaarde: <span class="value" id="totalValueZaklampen">€ —</span></span>
         <span>Aankoopwaarde: <span class="value" id="totalPurchaseZaklampen">€ —</span></span>
         <br>
-        <div class="last-update">Laatst bijgewerkt: 07-02-2026</div>
+        <div class="last-update">Laatst bijgewerkt: 14-02-2026</div>
         <button class="fab-wishlist" title="Mijn wishlist">♡</button>
     </div>
     <div class="brand-logos">
