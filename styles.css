@@ -64,7 +64,7 @@ h2 {
         rgba(255, 255, 255, 0.6) 0%,
         rgba(239, 247, 255, 0.6) 100%
     );
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); */
     backdrop-filter: blur(3px);
     border-radius: 15px;
     overflow: hidden;
@@ -176,7 +176,7 @@ h2 {
         rgba(255, 255, 255, 0.6) 0%,
         rgba(239, 247, 255, 0.6) 100%
     );
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); */
     backdrop-filter: blur(3px);
 }
 
@@ -236,7 +236,7 @@ h2 {
     position: relative;
     flex-wrap: wrap;
     color: white;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+    /* text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75); */
 }
 
 .last-update {
@@ -294,7 +294,7 @@ h2 {
 
 .sort-options select:focus {
     outline: none;
-    box-shadow: 0 0 5px rgba(0, 121, 107, 0.5);
+    /* box-shadow: 0 0 5px rgba(0, 121, 107, 0.5); */
 }
 
 a {
@@ -334,7 +334,7 @@ button:hover {
     border: none;
     border-radius: 50%;
     font-size: 1.5em;
-    box-shadow: 5px 2px 5px rgba(0,0,0,0.3);
+    /* box-shadow: 5px 2px 5px rgba(0,0,0,0.3); */
     cursor: pointer;
     z-index: 900;
     display: flex;
@@ -381,7 +381,7 @@ body:has(.wishlist-modal.active) {
     max-width: 720px;
     max-height: 88vh;
     overflow: hidden;
-    box-shadow: 0 8px 8px rgba(0,0,0,0.35);
+    /* box-shadow: 0 8px 8px rgba(0,0,0,0.35); */
 }
 
 .modal-header {
@@ -578,7 +578,7 @@ body:has(.wishlist-modal.active) {
             rgba(255, 255, 255, 0.6) 0%,
             rgba(239, 247, 255, 0.6) 100%
         );
-        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+        /* box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); */
         backdrop-filter: blur(4px);
         border-radius: 15px;
         opacity: 0;
