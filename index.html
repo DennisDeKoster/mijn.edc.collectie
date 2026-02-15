@@ -141,23 +141,32 @@
         function filterItems() {
             const query = document.getElementById('search').value.toLowerCase().trim();
             const selectedType = document.getElementById('filterType')?.value || 'all';
-            const cards = document.querySelectorAll('.card');
+            const cards = [...document.querySelectorAll('.card')];
             cards.forEach(card => {
-                const fullText = card.textContent.toLowerCase();
-                const cardMerk = card.dataset.merk;
-                const cardType = card.dataset.type;
-                const textMatch   = query === '' || fullText.includes(query);
-                const brandMatch  = activeBrand === null || cardMerk === activeBrand;
-                let typeMatch = selectedType === 'all' || cardType === selectedType;
-                if (query !== '') {
-                    typeMatch = true;
-                }
-                else if (activeBrand !== null) {
-                    typeMatch = true;
-                }
-                card.style.display = (textMatch && brandMatch && typeMatch) ? 'block' : 'none';
+                card.classList.add('hidden');
+                void card.offsetHeight;
             });
-            updateSummary();
+            setTimeout(() => {
+                cards.forEach(card => {
+                    const fullText  = card.textContent.toLowerCase();
+                    const cardMerk  = card.dataset.merk;
+                    const cardType  = card.dataset.type;
+                    const textMatch  = query === '' || fullText.includes(query);
+                    const brandMatch = activeBrand === null || cardMerk === activeBrand;
+                    let   typeMatch  = selectedType === 'all' || cardType === selectedType;
+                    if (query !== '') typeMatch = true;
+                    else if (activeBrand !== null) typeMatch = true;
+                    const shouldShow = textMatch && brandMatch && typeMatch;
+                    if (shouldShow) {
+                        card.style.display = "";
+                        void card.offsetHeight;
+                        card.classList.remove('hidden');
+                    } else {
+                        card.style.display = "none";
+                    }
+                });
+                updateSummary();
+            }, 380);
         }
 
         function clearSearch() {
@@ -425,7 +434,6 @@
                 });
             }
         });
-
     </script>
 </head>
 <body>
