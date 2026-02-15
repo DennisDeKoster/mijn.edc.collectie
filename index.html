@@ -163,8 +163,8 @@
         function clearSearch() {
             document.getElementById('search').value = '';
             activeBrand = null;
-            document.querySelectorAll('.brand-filter')
-                .forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.brand-filter.active, .brand-filter.inactive')
+                .forEach(el => el.classList.remove('active', 'inactive'));
             document.getElementById('searchBar')?.classList.remove('active');
             document.getElementById('searchSortContainer')?.classList.remove('search-active');
             filterItems();

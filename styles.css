@@ -5,7 +5,6 @@ html {
 body {
     background-color: #d2e0f0;
     margin: 0;
-    background: none;
     padding: 25px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -32,7 +31,7 @@ body {
         1px -1px 0px white,
         -1px  1px 0px white,
         1px  1px 0px white,
-        2px 2px 4px rgba(0, 0, 0, 0.75);
+        1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
@@ -47,7 +46,7 @@ h2 {
         1px -1px 1px rgba(255, 255, 255, 0.5),
         -1px  1px 1px rgba(255, 255, 255, 0.5),
         1px  1px 1px rgba(255, 255, 255, 0.5),
-        4px 5px 4px rgba(0, 0, 0, 0.2);
+        1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .container {
@@ -61,8 +60,8 @@ h2 {
 .card {
     background: linear-gradient(
         135deg,
-        rgba(255, 255, 255, 0.6) 0%,
-        rgba(239, 247, 255, 0.6) 100%
+        rgba(255, 255, 255, 0.75) 0%,
+        rgba(239, 247, 255, 0.75) 100%
     );
     /* box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); */
     backdrop-filter: blur(3px);
@@ -70,7 +69,7 @@ h2 {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
+    /* text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5); */
 }
 
 .card img {
@@ -102,8 +101,6 @@ h2 {
     display: inline-block;
     cursor: pointer;
     transition: transform 1.0s ease-in-out;
-    background-color: transparent;
-    mix-blend-mode: multiply;
     transform-origin: right top;
 }
 
@@ -173,8 +170,8 @@ h2 {
     gap: 10px;
     background: linear-gradient(
         135deg,
-        rgba(255, 255, 255, 0.6) 0%,
-        rgba(239, 247, 255, 0.6) 100%
+        rgba(255, 255, 255, 0.75) 0%,
+        rgba(239, 247, 255, 0.75) 100%
     );
     /* box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); */
     backdrop-filter: blur(3px);
@@ -236,7 +233,7 @@ h2 {
     position: relative;
     flex-wrap: wrap;
     color: white;
-    /* text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75); */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .last-update {
@@ -253,10 +250,14 @@ h2 {
 
 .search-bar input {
     padding: 4px;
-    border-radius: 6px;
+    border-radius: 8px;
     font-size: 12px;
     transition: all 0.4s ease;
     width: 100%;
+}
+
+.search-bar input::placeholder {
+    color: rgba(0,0,0,0.5);
 }
 
 .search-toggle {
@@ -273,7 +274,7 @@ h2 {
 
 .sort-options select {
     padding: 4px;
-    border-radius: 6px;
+    border-radius: 8px;
     font-size: 12px;
     transition: all 0.4s ease;
 }
@@ -288,13 +289,7 @@ h2 {
 }
 
 .sort-options select:hover {
-    border-color: #004d40;
-    background-color: #e0f2f1;
-}
-
-.sort-options select:focus {
-    outline: none;
-    /* box-shadow: 0 0 5px rgba(0, 121, 107, 0.5); */
+    background-color: rgba(255,255,255,0.8);
 }
 
 a {
@@ -345,8 +340,8 @@ button:hover {
 }
 
 .fab-wishlist:hover {
-    transform: scale(1.1);
-    color: black;
+    transform: scale(1.2);
+    color: white;
 }
 
 .wishlist-modal {
@@ -535,7 +530,7 @@ body:has(.wishlist-modal.active) {
 
     .search-sort-container {
         align-items: stretch;
-        justify-content: center;
+        justify-content: space-between;
         padding: 10px 0px 10px 0px;
     }
 
@@ -575,11 +570,11 @@ body:has(.wishlist-modal.active) {
         text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
         background: linear-gradient(
             135deg,
-            rgba(255, 255, 255, 0.6) 0%,
-            rgba(239, 247, 255, 0.6) 100%
+            rgba(255, 255, 255, 0.75) 0%,
+            rgba(239, 247, 255, 0.75) 100%
         );
         /* box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); */
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(3px);
         border-radius: 15px;
         opacity: 0;
         transform: translateY(-120px);
