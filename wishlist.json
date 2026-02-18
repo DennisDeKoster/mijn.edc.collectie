@@ -14,18 +14,24 @@
     "prijs": "$ 325"
   },
   {
+    "naam": "Kizer Feweed",
+    "uitvoering": "Polished DLC CPM S45VN, Titanium Camo Carbon 80's Inlay",
+    "link": "https://www.knivesandtools.nl/nl/pt/-kizer-feweed-ki3694a3-polished-dlc-cpm-s45vn-titanium-camo-carbon-80s-inlay-zakmes.htm",
+    "afbeelding": "https://assets.katogroup.eu/i/katogroup/KZKI3694A3_01_kizer",
+    "prijs": "€ 218,99"
+  },
+  {
     "naam": "Kizer Vanguard Phoca CD",
     "uitvoering": "Blackwashed 14C28N, Grey Aluminium",
     "link": "https://www.knivesandtools.nl/nl/pt/-kizer-vanguard-phoca-cd-v3781cda2-blackwashed-14c28n-grey-aluminium-zakmes.htm",
     "afbeelding": "https://assets.katogroup.eu/i/katogroup/KZV3781CDA2_01_kizer",
     "prijs": "€ 94,49"
   },
-
-    {
+  {
     "naam": "Civivi Button Lock Kitefin",
     "uitvoering": "Blackwashed 14C28N, Purple Aluminium",
     "link": "https://www.knivesandtools.nl/nl/pt/-civivi-button-lock-kitefin-c24091-3-blackwashed-14c28n-purple-aluminium-zakmes.htm",
-    "afbeelding": "https://assets.katogroup.eu/i/katogroup/CIC24091-3_04_civivi",
+    "afbeelding": "https://assets.katogroup.eu/i/katogroup/CIC24091-3_01_civivi",
     "prijs": "€ 82,00"
   },
   {
@@ -36,20 +42,6 @@
     "prijs": "$ 135"
   },
   {
-    "naam": "Kizer Serpentine",
-    "uitvoering": "Satin Elmax, Titanium & Carbonfiber Inlays",
-    "link": "https://www.knivesandtools.nl/nl/pt/-kizer-serpentine-ki3759fda1-satin-elmax-titanium-en-carbonfiber-inlays-zakmes-jonathan-styles-design.htm",
-    "afbeelding": "https://assets.katogroup.eu/i/katogroup/KZKI3759FDA1_01_kizer",
-    "prijs": "€ 222,49"
-  },
-  {
-    "naam": "Kizer Feweed",
-    "uitvoering": "Polished DLC CPM S45VN, Titanium Camo Carbon 80's Inlay",
-    "link": "https://www.knivesandtools.nl/nl/pt/-kizer-feweed-ki3694a3-polished-dlc-cpm-s45vn-titanium-camo-carbon-80s-inlay-zakmes.htm",
-    "afbeelding": "https://assets.katogroup.eu/i/katogroup/KZKI3694A3_01_kizer",
-    "prijs": "€ 218,99"
-  },
-  {
     "naam": "Kunwu Pulsar",
     "uitvoering": "Satin Elmax, Diamond Texture Ti",
     "link": "https://www.lamnia.com/nl/p/85268/messen/kunwu-knives-pulsar-diamond-texture-ti-satin-vouwmes",
@@ -57,3 +49,4 @@
     "prijs": "€ 250,68"
   }
 ]
+
