@@ -588,7 +588,9 @@
     "model": "RTWS-TB",
     "uitvoering": "Titanium + Carbon Fiber",
     "lemmetVorm": "Drop point",
+	"lemmetGrind": "",
     "afwerking": "Manual Fine Grinding Pearlescent",
+	"scharnier": "",
     "openmethode": "Duimsteun",
     "vergrendeling": "Button+Frame Lock",
     "gewicht": "113,5",
@@ -604,6 +606,8 @@
     "afbeelding": "img/knives/Remette-RTWS-TB.webp",
     "link": "https://www.remetteknife.com/products/remette-rt-steed-innovative-button-frame-lock-m390-blade-titanium-carbon-fiber-handle-folding-pocket-knife-rtws-tb"
   },
+
+
 
 
   {
