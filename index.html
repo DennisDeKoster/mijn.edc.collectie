@@ -391,6 +391,7 @@
             }
             let html = '';
             items.forEach(item => {
+                const domain = new URL(item.link).hostname.replace(/^www\./, '');
                 const imgHtml = item.afbeelding 
                     ? `<a href="${item.link}" target="_blank"><img src="${item.afbeelding}" alt="${item.naam || 'item'}">`
                     : `<div style="width:140px; height:140px; background:#e9ecef; border-radius:10px;"></div>`;
@@ -401,7 +402,8 @@
                         <div class="wishlist-item-info">
                             <p class="wishlist-item-name">${item.naam || 'Onbekend model'}</p></a>
                             ${item.uitvoering}<br>
-                            ${item.prijs}
+                            ${item.prijs}<br>
+                            Webshop: <a href="https://${domain}" target="_blank">${domain}</a>
                         </div>
                     </div>
                 `;
@@ -452,7 +454,7 @@
         <span>Nieuwwaarde: <span class="value" id="totalValueZaklampen">€ —</span></span>
         <span>Aankoopwaarde: <span class="value" id="totalPurchaseZaklampen">€ —</span></span>
         <br>
-        <div class="last-update">Laatst bijgewerkt: 14-02-2026</div>
+        <div class="last-update">Laatst bijgewerkt: 22-02-2026</div>
         <button class="fab-wishlist" title="Mijn wishlist">♡</button>
     </div>
     <div class="brand-logos">
