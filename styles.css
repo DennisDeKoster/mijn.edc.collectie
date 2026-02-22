@@ -504,6 +504,7 @@ body:has(.wishlist-modal.active) {
     }
     .brand-logos{
         padding: 10px 0px 10px 0px;
+        gap: 4px;
     }
 
     .logo-wrapper {
