@@ -617,7 +617,7 @@
     "aankoopwaarde": "184,99",
     "aankoopdatum": "13-01-2026",
     "afbeelding": "img/knives/KZKI3663A4_01_kizer.webp",
-    "link": "https://www.kizerknives.eu/products/mini-momo-m390-timascus-marble-carbon-fiber-ki3663a4-pre-order",
+    "link": "https://kizerknives.eu/products/ki3663a4",
     "specials": [
       {
         "description": "Designer: Vladimir Legachev",
@@ -651,10 +651,41 @@
     "link": "https://www.remetteknife.com/products/remette-rt-steed-innovative-button-frame-lock-m390-blade-titanium-carbon-fiber-handle-folding-pocket-knife-rtws-tb"
   },
 
+  {
+    "type": "mes",
+    "merk": "Kizer",
+    "naam": "Vanguard Mini Momo",
+    "model": "V3663C1",
+    "uitvoering": "Blue Aluminum",
+    "lemmetSlijping": "Flat",
+    "lemmetVorm": "Drop Point",
+    "afwerking": "Hand-brushed",
+    "lagers": "Ball bearing",
+    "openmethode": "Front flipper",
+    "vergrendeling": "Linerlock",
+    "gewicht": "95,5",
+    "staalsoort": "154CM",
+    "hardheid": "60-61",
+    "lengteGesloten": "105,4",
+    "lengte": "186,7",
+    "lengteLemmet": "81,3",
+    "dikteLemmet": "3",
+    "nieuwwaarde": "99,99",
+    "aankoopwaarde": "68,49",
+    "aankoopdatum": "14-04-2026",
+    "afbeelding": "img/knives/KZV3663C1_01_kizer.webp",
+    "link": "https://kizerknives.eu/products/v3663c1",
+    "specials": [
+      {
+        "description": "Designer: Vladimir Legachev",
+        "link": "https://www.instagram.com/legachev_knives/"
+      }
+    ]
+  },
 
 
 
-
+	
   {
     "type": "zaklamp",
     "merk": "Fenix",
