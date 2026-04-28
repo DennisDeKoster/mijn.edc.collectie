@@ -683,7 +683,37 @@
     ]
   },
 
-
+  {
+    "type": "mes",
+    "merk": "Kizer",
+    "naam": "Feweed",
+    "model": "Ki3694A3",
+    "uitvoering": "Black Titanium & Camo Carbon",
+    "lemmetSlijping": " ",
+    "lemmetVorm": "Harpoon",
+    "afwerking": "Polished DLC",
+    "lagers": "Ball bearing",
+    "openmethode": "Duimsteun, Front flipper",
+    "vergrendeling": "Framelock",
+    "gewicht": "89,6",
+    "staalsoort": "CPM S45VN",
+    "hardheid": "60-61",
+    "lengteGesloten": "10,4",
+    "lengte": "180,1",
+    "lengteLemmet": "75,7",
+    "dikteLemmet": "2,8",
+    "nieuwwaarde": "199,00",
+    "aankoopwaarde": "148,49",
+    "aankoopdatum": "27-04-2026",
+    "afbeelding": "img/knives/KZKI3694A3_01_kizer.webp",
+    "link": "https://kizerknives.eu/products/ki3694a3",
+    "specials": [
+      {
+        "description": "Designer: Vũ Huỳnh Nam Anh"
+      }
+    ]
+  },
+	
 
 	
   {
