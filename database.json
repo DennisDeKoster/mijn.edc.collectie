@@ -851,7 +851,7 @@
     "usbType": "USB-C",
     "iprating": "IPX5",
     "valbestendigheid": " ",
-    "materiaal": "Aluminium",
+    "materiaal": "Aluminum Alloy (6061)",
     "strobe": false,
     "sos": true,
     "beacon": true,
@@ -963,7 +963,7 @@
     "valbestendigheid": " ",
     "materiaal": "OAL™",
     "strobe": true,
-    "sos": true,
+    "sos": false,
     "beacon": true,
     "lightingLevels": [
 	  { "description": "Floodlight/Spotlight"},
@@ -971,10 +971,50 @@
       { "description": "High 300/270  lumen"},
       { "description": "Medium 100/90 lumen"},
       { "description": "Low 10/9 lumen"},
-      { "description": "Moonlight 1 lumen"}
+      { "description": "Moonlight 1/1 lumen"}
     ],
 	  "specials": [
       { "description": "UV-licht 365nM 800mW"},
+      { "description": "Magnetische achterkant"}
+	]
+  },
+	
+  {
+    "type": "zaklamp",
+    "merk": "Olight",
+    "naam": "Oclip Pro",
+    "uitvoering": "Zwart",
+    "afbeelding": "img/flashlights/Olight_OclipPro.webp",
+    "link": "https://www.olight.com/store/oclip-pro-clip-on-flashlight-floodlight-spotlight-red-light",
+    "nieuwwaarde": "47,95",
+    "aankoopwaarde": "36,45",
+    "aankoopdatum": "20-07-2026",
+    "gewicht": 53,
+    "lengte": 57,
+    "dikte": "27,8",
+    "maxLumen": 500,
+    "minLumen": 1,
+    "maxBereik": 120,
+    "maxRuntime": "144 uur (1 lumen)",
+    "batterij": "580mAh Li-ion",
+    "oplaadbaar": true,
+    "usbType": "USB-C",
+    "iprating": "IPX6",
+    "valbestendigheid": " ",
+    "materiaal": "Aluminum Alloy (6061)",
+    "strobe": true,
+    "sos": false,
+    "beacon": true,
+    "lightingLevels": [
+	  { "description": "Floodlight/Spotlight"},
+      { "description": "Turbo 500/380 lumen"},
+      { "description": "High 300/240  lumen"},
+      { "description": "Medium 100/85 lumen"},
+      { "description": "Low 10/9 lumen"},
+      { "description": "Moonlight 1/1 lumen"},
+	  { "description": "Rood 40(high)/4(low) lumen"}
+    ],
+	  "specials": [
       { "description": "Magnetische achterkant"}
 	]
   }
