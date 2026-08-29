@@ -713,6 +713,39 @@
       }
     ]
   },
+
+
+  {
+    "type": "mes",
+    "merk": "Kunwu",
+    "naam": "Excalibur Compact",
+    "model": "-",
+    "uitvoering": "Titanium Diamond Texture Satin",
+    "lemmetSlijping": "Flat",
+    "lemmetVorm": "Drop point",
+    "afwerking": "Satin",
+    "lagers": "Ball bearing",
+    "openmethode": "Duimsteun, Duimgat",
+    "vergrendeling": "Verta Lock",
+    "gewicht": "129",
+    "staalsoort": "Elmax",
+    "hardheid": "60-61",
+    "lengteGesloten": "107",
+    "lengte": "188",
+    "lengteLemmet": "82",
+    "dikteLemmet": "3,2",
+    "nieuwwaarde": "265,00",
+    "aankoopwaarde": "251,75",
+    "aankoopdatum": "28-08-2026",
+    "afbeelding": "img/knives/Kunwu_B709C-T1A.webp",
+    "link": "https://kunwuknives.com/shop/p/padre-diamond-ti-z9xrl-4sxfr-7c69s-5bma5-rhx4n-j8rpp-c56k6",
+    "specials": [
+      {
+        "description": "Metal Complex",
+        "link": "https://themetalcomplex.com/"
+      }
+    ]
+  },
 	
 
 	
