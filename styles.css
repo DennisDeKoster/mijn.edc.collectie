@@ -135,9 +135,6 @@ h2 {
     object-fit: scale-down;
     margin-top: 10px;
 }
-.naam {
-    word-break: keep-all;
-}
 
 .merk {
     position: absolute;
@@ -176,7 +173,7 @@ h2 {
 }
 
 .card:hover h2{
-    transition-delay: 0s, 0.25s;
+    transition-delay: 0s, 1.25s;
     transform: scale(1.15) translateY(0%) translateX(5%);
     opacity: 0;
 }
