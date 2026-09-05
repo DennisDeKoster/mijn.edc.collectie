@@ -8,6 +8,14 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script>
         let activeBrand = null;
+        function merkLogoPath(merk) {
+            if (!merk) return '';
+            const slug = merk
+                .toLowerCase()
+                .trim()
+                .replace(/\s+/g, '-');
+            return `img/logos/${slug}-logo.webp`;
+        }
         async function loadItems() {
             const response = await fetch('database.json');
             const text = await response.text();
@@ -28,11 +36,15 @@
                             <div class="specs">
                                 <div class="row">
                                     <div class="topleft">
+                                        <img class="merk-logo" src="${merkLogoPath(item.merk)}" alt="${item.merk || ''}">
                                         <h2>
-                                            <span class="merk">${item.merk || ''}</span><br>
-                                            <span class="naam">${item.naam || ''}</span><br>
-                                            <div class="uitvoering" style="font-size: 0.8em; white-space: nowrap; display: inline-block;">
-                                                <strong>${item.uitvoering || ''}</strong>
+                                            <div class="title-row">
+                                                <div class="title-text">
+                                                    <span class="merk">${item.merk}</span><br>
+                                                    <span class="naam">${item.naam || ''}</span><br>
+                                                    <div class="uitvoering" style="font-size: 0.8em; white-space: nowrap; display: inline-block;"><strong>${item.uitvoering || ''}</strong><br>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </h2>
                                     </div>
@@ -90,10 +102,17 @@
                             <div class="specs">
                                 <div class="row">
                                     <div class="topleft">
+                                        <img class="merk-logo" src="${merkLogoPath(item.merk)}" alt="${item.merk || ''}">
                                         <h2>
-                                            <span class="merk">${item.merk}</span><br>
-                                            <span class="naam">${item.naam}</span><br>
-                                            <div class="uitvoering" style="font-size: 0.8em; white-space: nowrap; display: inline-block;"><strong><b>${item.uitvoering}</b></strong></div>
+                                            <div class="title-row">
+                                                <div class="title-text">
+                                                    <span class="merk">${item.merk}</span><br>
+                                                    <span class="naam">${item.naam || ''}</span><br>
+                                                    <div class="uitvoering" style="font-size: 0.8em; white-space: nowrap; display: inline-block;">
+                                                        <strong>${item.uitvoering || ''}</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </h2>
                                     </div>
                                     <div class="topright">
@@ -454,7 +473,7 @@
         <span>Nieuwwaarde: <span class="value" id="totalValueZaklampen">€ —</span></span>
         <span>Aankoopwaarde: <span class="value" id="totalPurchaseZaklampen">€ —</span></span>
         <br>
-        <div class="last-update">Laatst bijgewerkt: 29-08-2026</div>
+        <div class="last-update">Laatst bijgewerkt: 05-09-2026</div>
         <button class="fab-wishlist" title="Mijn wishlist">♡</button>
     </div>
     <div class="brand-logos">
@@ -469,10 +488,11 @@
         <div class="logo-wrapper brand-filter" data-merk="Remette"><img src="img/logos/Remette-logo.webp" alt="Remette Knife"></div>
         <div class="logo-wrapper brand-filter" data-merk="Sencut"><img src="img/logos/Sencut-logo.webp" alt="Sencut"></div>
         <div class="logo-wrapper brand-filter" data-merk="Vosteed"><img src="img/logos/Vosteed-logo.webp" alt="Vosteed"></div>
-        <div class="logo-wrapper brand-filter" data-merk="WE Knife"><img src="img/logos/WE-logo.webp" alt="WE Knife"></div>
-        <div class="logo-wrapper"><a href="https://knivesandtools.nl" target="_blank"><img src="img/logos/KATO-logo.webp" alt="Knives and Tools" /></a></div>
-        <div class="logo-wrapper"><a href="https://lamnia.com/nl" target="_blank"><img src="img/logos/Lamnia-logo.webp" alt="Lamnia" /></a></div>
-        <div class="logo-wrapper"><a href="https://unlockedcomposites.com" target="_blank"><img src="img/logos/UC-logo.webp" alt="Unlocked Composites" /></a></div>      
+        <div class="logo-wrapper brand-filter" data-merk="WE Knife"><img src="img/logos/WE-Knife-logo.webp" alt="WE Knife"></div>
+        <div class="logo-wrapper"><a href="https://www.knivesandtools.nl" target="_blank"><img src="img/logos/KATO-logo.webp" alt="Knives and Tools" /></a></div>
+        <div class="logo-wrapper"><a href="https://www.lamnia.com/nl" target="_blank"><img src="img/logos/Lamnia-logo.webp" alt="Lamnia" /></a></div>
+        <div class="logo-wrapper"><a href="https://www.knifestock.nl/" target="_blank"><img src="img/logos/Knifestock-logo.webp" alt="Knifestock" /></a></div>
+        <div class="logo-wrapper"><a href="https://www.unlockedcomposites.com" target="_blank"><img src="img/logos/UC-logo.webp" alt="Unlocked Composites" /></a></div>      
     </div>
     <div class="search-sort-container" id="searchSortContainer">
         <button class="search-toggle" onclick="toggleSearch()">🔍</button>
